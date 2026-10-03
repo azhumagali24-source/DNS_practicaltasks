@@ -65,3 +65,29 @@ After flushing the DNS cache, the cached DNS records were cleared. A new lookup 
 Q3. Why would you set a short TTL before moving a website to a new server?
 
 A short TTL makes DNS records expire faster. This helps users get the new server address sooner after the DNS record is changed.
+
+ask 5 — AI Fact-Checker:
+
+1. DNS translates domain names into IP addresses.
+
+TRUE. DNS translates human-readable domain names, such as google.com, into IP addresses that computers use to connect to servers.
+
+2. DNS uses only UDP.
+
+FALSE. DNS usually uses UDP, but it can also use TCP. TCP is used for some larger responses and certain DNS operations.
+
+3. DNS records are stored on one central server.
+
+FALSE. DNS is a distributed system. Records are stored on many DNS servers around the world.
+
+4. A shorter TTL means DNS changes are updated faster.
+
+TRUE. A shorter TTL means cached DNS records expire sooner, so clients can receive updated DNS information sooner.
+
+5. Root DNS servers store the IP address of every website.
+
+FALSE. Root servers do not store the IP address of every website. They direct DNS queries to the appropriate Top-Level Domain (TLD) servers, such as .com or .org.
+
+Short conclusion:
+
+DNS is a distributed system that helps computers find websites by translating domain names into IP addresses. It uses caching and TTL to improve performance and control how long DNS information is stored.
